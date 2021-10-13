@@ -17,7 +17,7 @@
 
     <!-- 동영상 재생하기 전에 미리 보여지는 그림(유투브 썸네일 같은거) -->
     <!-- poster 속성 이용하면 됨 -->
-       <video poster="images.jpg" controls width="640px" height= "360px" >
+       <video poster="images.jpg" controls width="640px" height= "360px" autoplay>
            <source src= "Cat - 66004.mp4" type="video/mp4">
        </video>
        <!-- 시간/용량: 9초/  -->
@@ -30,5 +30,12 @@
     </video>
 
     <!-- 그렇다면 둘다 자동재생 하게하는방법은? -->
+    <!-- 1. 음소거하면 무조건 자동재생됨(muted) -->
+    <video poster="images.jpg" controls width="640px" height= "360px" autoplay muted>
+        <source src= "Cat - 66004.mp4" type="video/mp4">
+    </video>
+    <!-- 2. 자바스크립트 이용하면 자동재생됨 -->
+    <!-- 게시판에서 들어가면 되는데 링크복붙하면 안됨 -->
+    
 </body>
 </html>
