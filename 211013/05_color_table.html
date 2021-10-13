@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table[border=1] -->
+    <table border="1">
+    <!-- caption(테이블캡션) -->
+    <caption>테이블캡션</caption>
+    <colgroup>
+        <!-- col[span=2 style=background:red] -->
+        <col span="2" style="background-color: yellow;">
+        <col style="background-color: yellowgreen;">
+        <!-- span2: 첫번째 제외한 다음것? -->
+    </colgroup>
+    <!-- 5행 3열짜리 테이블 만들어보자 -->
+    <thead style="background:green">
+        <!-- 백그라운드는 이미지줄수있음? -->
+        <tr>
+            <th>제목</th>
+            <th>제목</th>
+            <th>제목</th>
+        </tr>
+    </thead>
+
+    <tbody>
+    <!-- alt +마우스클릭 : 다중 선택 -->
+    <tr>
+        <td>데이터</td>
+        <td>데이터</td>
+        <td>데이터</td>
+    </tr>
+    <tr>
+        <td>데이터</td>
+        <td>데이터</td>
+        <td>데이터</td>
+    </tr>
+    <tr>
+        <td>데이터</td>
+        <td>데이터</td>
+        <td>데이터</td>
+    </tr>    
+   
+</tbody>
+    <tfoot style="background:wheat">
+        <tr>
+            <td>아래쪽</td>
+            <td>아래쪽</td>
+            <td>아래쪽</td>
+        </tr>
+    </tfoot>
+    </table>
+
+</body>
+</html>
