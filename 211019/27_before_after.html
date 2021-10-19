@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            counter-increment: rint
+        }
+
+        /* 숫자를 증가시킬 rint변수선언 */
+        p::before {
+            content: counter(rint)"."
+        }
+
+        /*counter rint가 되면 처음에는 1, 그담엔2, p태그하나더넣으면 3이됨*/
+        p::after {
+            content: "-"attr(data-page) "page"
+        }
+
+        /*attr: attribute : 속성*/
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p data-page="52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et rem nemo delectus nostrum, amet hic
+        sint. Dolorum excepturi placeat magnam sequi perspiciatis mollitia perferendis dolorem, recusandae tempora hic
+        vitae reiciendis.</p>
+    <p data-page="273">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, aut, accusamus quasi saepe,
+        tenetur commodi accusantium architecto minima maiores ipsam repudiandae ratione. Error, praesentium. Sunt natus
+        ab itaque at culpa.</p>
+    <p data-page="275">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, aut, accusamus quasi saepe,
+        tenetur commodi accusantium architecto minima maiores ipsam repudiandae ratione. Error, praesentium. Sunt natus
+        ab itaque at culpa.</p>
+    <!-- data-page: 원래 있는속성x / 임의로 사용가능한 속성: java에서 활용../사용자가만든속성-->
+</body>
+
+</html>
