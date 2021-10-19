@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one
+        {
+            color: red
+        }
+        
+        #one_p
+        {
+            color:blue
+        }
+        #two
+        {
+            color:pink
+        }
+        
+        #two_p
+        {
+            color:magenta
+        }
+        #one, #one_p 
+        { 
+             /*여기서 ,콤마는 or  */
+            background-color: yellow;}
+
+        /* and는 붙여쓰는거 */
+        h1#two /*h1이면서 그와동시에 id가 two인경우*/
+        {background-color: aquamarine;}
+    </style>
+    
+</head>
+
+<body>
+    <!-- id가 one인것은 하나만 있어야함 -->
+    <!-- javascript 삽입?전에는 여러개있어도 ok 나오긴함 -->
+    <!-- but, javascript이용하면 문제발생함  -->
+    <h1 id="one">Lorem, ipsum dolor.</h1>
+    <!-- <h1 id="one"> lorem, ipsum dolor.<h1> -->
+    <p id="one_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perspiciatis quod architecto fugit voluptate,
+        exercitationem amet blanditiis nisi nulla quaerat porro obcaecati, earum optio reiciendis dignissimos beatae?
+        Earum, consectetur dolore.</p>
+    <h1 id="two">Lorem, ipsum dolor.</h1>
+    <p id="two_p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit perspiciatis quod architecto fugit voluptate,
+        exercitationem amet blanditiis nisi nulla quaerat porro obcaecati, earum optio reiciendis dignissimos beatae?
+        Earum, consectetur dolore.</p>
+</body>
+
+</html>
