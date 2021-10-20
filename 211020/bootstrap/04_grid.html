@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      /* style 명이 row인 div태그의 모든 자손에 대하여 스타일 줌 */
+      /* div.row>*
+       */
+       /* html책 120p참고 */
+       div.row>[class*=col] /*문자열 선택자의 일종, class명 앞에 col이 들어간 경우*/
+      {
+        border:1px solid black
+      }
+    </style>
+</head>
+
+<body>
+<!-- navbar-light bg-light -->
+<!-- light랑 dark가 있음. -->
+<!-- light는 글자색이 검은색. dark는 글자색이 흰색. 즉 배경화면에 맞는 글자색 -->
+<!--  bg-light: bg-색깔 넣으면됨 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+    <div style="margin: 100px;"> </div>
+    <!-- fixed top으로 윗줄고정했을때 margin넣어줘야 글자(내용)안짤림/ 살짝 여백줌  -->
+    <!-- 부트스트랩 레이아웃의 가장 기본:container -->
+    <div class="container">
+        <h1 class="text-info">Hello, world!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, eum provident. Distinctio quasi neque,
+            nihil praesentium quaerat pariatur fugiat sed modi quia voluptatem necessitatibus asperiores, optio a, ipsa
+            inventore vero.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus numquam eum cum eos veritatis dignissimos quo aliquid incidunt eius distinctio voluptatibus repudiandae unde laudantium, sapiente sequi autem eaque nam, delectus aut expedita ullam tempore dicta culpa quos. Officia corrupti inventore eius voluptas ad explicabo hic veritatis tempore exercitationem corporis? Dolor molestiae consectetur blanditiis fugit consequuntur ab explicabo, rerum necessitatibus minus sunt saepe accusamus aliquid aut reiciendis! Impedit ea, maiores minus rem totam harum. Corporis fugiat nobis error saepe est numquam totam quam cupiditate sit ipsam magni fuga dolore officiis ducimus ipsa, laborum laboriosam facilis quasi a doloremque praesentium eveniet enim. Autem dolores assumenda molestias distinctio sit. Fuga itaque recusandae numquam quos autem doloremque impedit pariatur, praesentium minus dolore laborum inventore. Quis eius animi iste, similique natus, laborum facere alias eligendi excepturi quisquam hic odit veritatis sit enim. Enim quaerat, sunt quas aperiam dolore assumenda eius dicta recusandae nam, expedita ut pariatur consequatur iure reprehenderit quod voluptatibus exercitationem perspiciatis. Cumque odit culpa porro saepe nesciunt suscipit, soluta perspiciatis animi delectus tenetur, dolorum neque nisi maxime temporibus iste corporis! Ipsam tempore debitis ipsum quia officiis. Ad, voluptatem, obcaecati exercitationem dignissimos iusto assumenda delectus dolore, odio necessitatibus pariatur voluptatum itaque repellendus ratione nisi debitis! Eos voluptatem sapiente dolorum minus deserunt animi dignissimos odit! Rem reprehenderit minima nihil. Deleniti natus maxime autem ullam rerum tenetur numquam, inventore odit consequuntur molestiae sunt laboriosam deserunt aspernatur. Incidunt est debitis atque corrupti delectus voluptates quisquam. Pariatur molestias sequi atque necessitatibus harum nobis libero et voluptates, voluptate molestiae veritatis. Corporis, commodi molestiae provident voluptate dolorem, corrupti molestias reiciendis id iusto sit at reprehenderit velit nisi quis laudantium! Dolores veritatis molestias ipsa similique aliquam! Quam, nemo est. Dolores, iste. Cumque aperiam accusamus sit velit libero, ex consequatur, molestias hic ab optio, doloribus magni labore et molestiae deleniti explicabo autem neque? Sint, saepe voluptates, ab beatae modi dolore nobis exercitationem quaerat vero similique expedita placeat ut? Expedita, minus in odio debitis tenetur excepturi ducimus assumenda velit? Ipsam, saepe. Minus cumque optio inventore nobis porro. Aliquid sequi expedita pariatur magnam est excepturi quidem, reprehenderit nulla repudiandae assumenda consequatur mollitia odio ad accusamus veritatis autem, repellat saepe nobis optio aspernatur deserunt illum. Distinctio officia repellendus voluptas aliquid saepe architecto tempore, culpa assumenda, corporis deserunt iste. Ex optio, eos amet consequatur vel pariatur dolor sit, quae earum excepturi dolores ad natus unde maiores vitae error! Facilis illum harum explicabo omnis commodi in rerum quod nobis. Molestiae consectetur magni ea? Ipsa deserunt, quos est perspiciatis maiores dolorem officiis dolore delectus sapiente labore dolores eos animi minus perferendis provident dicta mollitia incidunt consectetur a eligendi reiciendis ipsam? Ratione nostrum reiciendis, itaque illum tempora, hic deserunt omnis expedita possimus porro blanditiis exercitationem repellendus voluptatem eaque suscipit ad vero quaerat? Molestiae tempore aut hic eligendi veniam possimus alias voluptas modi sint repellendus officia, debitis maxime. Similique debitis modi pariatur quo laboriosam soluta reprehenderit, hic adipisci blanditiis inventore reiciendis rem magnam atque, deserunt ipsum, quia nesciunt autem facilis ut ipsa voluptates natus. Eligendi hic, aliquid quaerat vero harum saepe obcaecati ipsam similique deserunt! Nisi inventore laudantium aliquid, nam voluptatem rem adipisci tenetur dolor quibusdam est voluptates eos odit ipsa error dolorum, veniam id dignissimos omnis consequatur ex. Aliquid exercitationem, ut excepturi eaque necessitatibus obcaecati at, a ratione quia dolores, nesciunt provident expedita facilis modi architecto fugit enim beatae! Laboriosam, harum porro. Iusto ducimus cum blanditiis libero accusantium modi error, placeat rerum facilis fugiat eaque voluptates tenetur sit nihil, ullam quisquam aliquid eligendi explicabo iure temporibus magnam ut dolore hic veritatis? Voluptatem culpa dolorum, itaque quos reiciendis fugiat aspernatur tenetur excepturi porro aliquid magni ut! Perspiciatis consequuntur, itaque veritatis totam voluptatibus quaerat, voluptates nemo voluptate vero at porro hic eligendi quae similique molestiae tempore libero sapiente cumque facilis quis id doloribus. Doloribus commodi blanditiis inventore, consequatur dicta dolorem vitae neque repellat eveniet vero, eum temporibus consectetur cum deserunt? Eveniet nulla officia velit neque vitae illo sequi, aliquid delectus culpa, voluptate, mollitia cupiditate itaque! Officiis atque quos ipsum nulla consequatur unde eius sequi? Fugit dignissimos pariatur quas quis, sapiente laboriosam cupiditate iste ut modi, dolor aliquam nulla! Incidunt a ea, velit unde necessitatibus, dolorem nobis corporis voluptate enim quas placeat modi, tempora consectetur? Cumque laborum, modi, autem minima a qui assumenda voluptatibus eligendi ipsa officia quaerat ipsum aspernatur. Numquam eos voluptas voluptate neque! Pariatur a at molestiae ipsa cum assumenda ducimus rem qui neque quos officia incidunt consequuntur reiciendis fuga suscipit quia et dignissimos, quae nam odio soluta. Atque laudantium nesciunt repellat exercitationem doloribus at neque obcaecati explicabo id ipsa. Rem accusantium praesentium vel ipsa tempora odit, sit nam corrupti eius magni eos repellendus, numquam aperiam aspernatur aut voluptates similique dolorum? Perferendis ipsum quas qui eum ad asperiores iusto at amet officiis. Qui illum temporibus obcaecati sapiente dolores repudiandae a corrupti harum nam quis exercitationem, quia aliquam placeat ex odit iure similique fuga rem tempora. At, reprehenderit ipsum. Reiciendis debitis ratione cupiditate maxime quasi eum, error deserunt dolore quo esse incidunt, sed, eligendi ea fugit dicta ipsum adipisci placeat aut corrupti ducimus distinctio. Laborum vel quaerat corrupti non! Perspiciatis reiciendis molestias sint, fugit dolores illum. Qui nisi impedit, dolorem exercitationem dignissimos iure unde quaerat voluptatem nesciunt ut corrupti neque explicabo accusamus quisquam repudiandae rerum possimus pariatur optio blanditiis ab incidunt mollitia doloremque in reiciendis? Voluptatum obcaecati ut vitae, nam adipisci quo vero odio fuga veritatis ipsam culpa commodi provident sint placeat optio non dolorem voluptatem aspernatur! Doloribus, voluptatibus reprehenderit, ad enim quo nesciunt, commodi laborum corporis dolore iusto et! Dolores omnis ut quod repudiandae asperiores, beatae tenetur ad eveniet illum harum corrupti assumenda commodi fugit labore iusto aliquid soluta fugiat facere magni debitis enim sequi esse iste! Recusandae, impedit? Quaerat ex, asperiores corrupti reprehenderit molestias numquam magnam dolorum dolor amet autem in molestiae totam ut sint aperiam, cumque repudiandae ratione quis consequatur! Architecto, eaque id. Cum illum deserunt tenetur libero optio excepturi in assumenda numquam porro voluptas consectetur inventore dolorum explicabo ducimus temporibus exercitationem possimus deleniti, quam magni doloremque. Nemo praesentium molestiae nisi deserunt possimus officia odit. Sint, expedita illo!</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet quos natus odio est, libero nihil, nemo odit accusamus incidunt nobis, ipsum quisquam doloremque molestias vero aspernatur. Suscipit, quisquam consequatur.</div>
+        <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet quos natus odio est, libero nihil, nemo odit accusamus incidunt nobis, ipsum quisquam doloremque molestias vero aspernatur. Suscipit, quisquam consequatur.</div>
+      </div>
+      <div class="row">
+        <div class="col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet quos natus odio est, libero nihil, nemo odit accusamus incidunt nobis, ipsum quisquam doloremque molestias vero aspernatur. Suscipit, quisquam consequatur.</div>
+        <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet quos natus odio est, libero nihil, nemo odit accusamus incidunt nobis, ipsum quisquam doloremque molestias vero aspernatur. Suscipit, quisquam consequatur.</div>
+        <div class="col-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet quos natus odio est, libero nihil, nemo odit accusamus incidunt nobis, ipsum quisquam doloremque molestias vero aspernatur. Suscipit, quisquam consequatur.</div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">이렇게 3등분도됨</div>
+        <div class="col-4">이렇게 3등분도됨</div>
+        <div class="col-4">이렇게 3등분도됨</div>
+      </div> 
+
+      <div class="row">
+        <div class="col-3">이렇게 4등분도됨</div>
+        <div class="col-3">이렇게 4등분도됨</div>
+        <div class="col-3">이렇게 4등분도됨</div>
+        <div class="col-3">이렇게 4등분도됨</div>
+
+      </div> 
+  </div>
+  
+      </body>
+      <!-- <div class="col-3"> 이렇게 4등분도됨 -->
+         
+      
+      <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

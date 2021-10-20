@@ -1,0 +1,4 @@
+div.row>[class*=col] {
+    border:1px solid black;
+}
+/* style태그에 하나하나 다 값주기보다 이런식으로 하면조음 */
