@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* z-index 이용해서 내가 원하는 태그 앞으로오게 만들기 가능 */
+        .box{width: 100px;height: 100px; position: fixed;} 
+        .red {background-color: red; left: 50px; top: 50px; z-index: 2;}
+        .green {background-color: green; left: 100px; z-index: 3;}
+        .blue {background-color: blue; left: 120px; top:60px; z-index: 1;}
+        /* z-index값 없으면 순서대로..? */
+    </style>
+</head>
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+</html>

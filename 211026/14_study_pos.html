@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 100px;height: 100px; position: absolute;} 
+        .red {background-color: red; left: 10px; top: 10px; }
+        .green {background-color: green; left: 50px; top: 50px; }
+        .blue {background-color: blue; left: 90px; top: 90px; }
+    </style>
+
+    <style>
+        /* 자손과 후손은다름.. >바로 안쪽에 있는거만 선택 */
+        /* 한칸 띈거: 안쪽의 안쪽들도 다 선택 */
+        /* body div : 이렇게 하면 body>div, body>div>div 싹다 적용ok */
+        body>div {position: relative; height: 100px; border: 3px solid black; overflow: hidden;} 
+        /* overflow: hidden없으면 아래쪽 글자는 덮임/ 보이게하고싶으면 overflow:scroll */
+        /* 핵심: position:relative; height:100px */
+    </style>
+</head>
+<body>
+    <h1>lorem, ipsum.</h1>
+    <!-- div>(div*3) -->
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>lorem, ipsum dolor.</h1>
+</body>
+</html>

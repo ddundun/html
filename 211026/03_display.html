@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,span {border: 3px solid black; background-color: springgreen;}
+        #none {display: none}
+        #inline {display: inline; margin:50px; width: 300px; height: 300px;}
+        /* inline에는 넓이라는 개념x, 여백도 양옆에만 들어감 */
+        #inline_block {display: inline-block; margin:50px; width: 300px; height: 300px;}
+        #hidden{visibility: hidden;}
+        /* display:none != visibility: hidden*/
+    </style>
+</head>
+<body>
+
+    <div>이건 display 속성이 block입니다. div=block</div> <!-- 한줄 다차지함 -->
+    <span>이건 dispaly 속성이 inline입니다. span=inline</span>
+    <div id="none">none!</div>    <!-- div#none -->
+    <div id="inline">inline</div>
+    <div id="inline_block">inline_block</h1></div>
+    <div id="hidden">hidden></div>
+    <!-- inline이랑 inline block, div, span만 나옴 -->
+</body>
+</html>
