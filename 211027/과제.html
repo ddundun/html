@@ -106,6 +106,7 @@
         <style> /* 메인헤더 a태그에만 적용*/
             #main_header a {font-family: 'NanumHyeJunCe'; font-weight: bold;}
             #main_footer h3 {font-family: 'NanumHyeJunCe'; font-weight: bold;}
+
         </style>
         <link href="https://hangeul.pstatic.net/hangeul_static/css/NanumHyeJunCe.css" rel="stylesheet">
         <style>
@@ -133,7 +134,7 @@
                 margin-bottom: 10px;
                 padding: 20px;
                 border: 1px solid black;
-                position: relative; height: 100px; border: 1px solid black; ;
+                position: relative; width:200px; height: 100px; border: 1px solid black; ;
             }
         
             /* #main_section>article.main_article>h1 h1에만적용?*/
@@ -253,11 +254,16 @@
 
             }
         </style>
+        <style>
+            #main_section>article.main_article>p {font-family:'Gmarket Sans TTF Light';}
+            #main_section>article.main_article>div {font-family:'Gmarket Sans TTF Light';}
+
+        </style>
 </head>
 <body>
     <header id="main_header">
         <div id="title">
-            <h1>삼성라이온즈 소개</h1>
+            <h1>삼성라이온즈</h1>
             <h2><i>New Blue! New Lions!</i></h2>
         </div>
         <nav id="main_gnb"> 
@@ -288,30 +294,46 @@
         <section id= "main_section">
             <!-- article.main_article*3 -->
             <article class="main_article">
-                <h1>오늘의 경기</h1>
-                <div class="box">삼성vs키움</div>
-                <div class="box">lgvs한화</div>
-                <div class="box">두산vs ssg</div>
-                <div class="box">kia vs 롯데</div>
-                <div class="box">nc vs kt</div>
-            </article>
-            <article class="main_article">
-                <h1>제목</h1>
-                <div class="box">삼성vs키움</div>
-                <div class="box">lgvs한화</div>
-                <div class="box">두산vs ssg</div>
-                <div class="box">kia vs 롯데</div>
-                <div class="box">nc vs kt</div>
-                <div class="box">삼성vs키움</div>
-                <div class="box">lgvs한화</div>
-                <div class="box">두산vs ssg</div>
-                <div class="box">kia vs 롯데</div>
-                <div class="box">nc vs kt</div>
+                <h1>2021 프로야구 포스트시즌 일정</h1>
+                <hr>
+                <br>
+                <h1>와일드카드: 키움 vs 두산</h1>
+                <p>1차전 11월 1일 잠실</p>
+                <p>2차전 11월 2일 잠실</p>
+                <br>
+                <h1>준플레이오프: 와카전 이긴놈 vs lg</h1>
+                <p>1차전 11월 4일 잠실</p>
+                <p>2차전 11월 5일 미정</p>
+                <p>3차전 11월 7일 잠실</p>
+                <br>
+                <h1>플레이오프: 준플옵 이긴놈 vs 삼성</h1>
+                <p>1차전 11월 9일 대구</p>
+                <p>2차전 11월 10일 미정</p>
+                <p>3차전 11월 12일 대구</p>
+                <br>
+                <h1>☆한국시리즈☆ : 플옵이긴놈 vs kt</h1>
+                <p>1차전 11월 14일 고척</p>
+                <p>2차전 11월 15일 고척</p>
+                <p>3차전 11월 17일 고척</p>
+                <p>4차전 11월 18일 고척</p>
+                <p>5차전 11월 20일 고척</p>
+                <p>6차전 11월 21일 고척</p>
+                <p>7차전 11월 22일 고척</p>
 
             </article>
             <article class="main_article">
-                <h1>제목</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam itaque quam qui incidunt, quis laudantium iusto saepe. Molestias est atque omnis odit. Non, molestias. Praesentium quisquam dolore ut sequi voluptatibus unde neque, porro impedit ea ex eveniet quidem ipsum quibusdam similique, nesciunt iure provident eligendi adipisci voluptatem doloremque. Nisi, doloremque dolorem soluta architecto dolores aut asperiores consectetur labore maxime. In eos eveniet laudantium rem sed, pariatur id nesciunt, repellendus rerum cum sequi magni tenetur culpa ipsum omnis corporis molestiae, cumque dolores soluta quaerat repellat odit tempore? Veniam dolorem explicabo exercitationem placeat blanditiis libero, id, error accusantium eligendi laudantium dolor!Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo est repudiandae voluptatem dolore harum suscipit dignissimos voluptatum doloribus. Dolore unde atque temporibus illum voluptates debitis, est inventore repellat vel!</p>
+                <h1>예매하기</h1>
+                <br>
+                <a href="http://ticket.interpark.com/Contents/promotion/sports?seq=8">
+                <img width=150px height= 150px src="interpark.png" alt="">
+                </a>
+                <!-- <div class="box">lgvs한화</div> -->
+           
+           
+            </article>
+            <article class="main_article">
+                <h1>포스트 시즌 진출 성공..!</h1>
+                <p>이게 어디냐 ㅜ감동..</p>
             </article>
         </section>
         <aside id= "main_aside">
@@ -319,15 +341,26 @@
             <input id="first" type="radio" name= "tab" checked="checked">
             <input id="second" type="radio" name= "tab" >
             <section class="buttons">
-                <label for="first">최근 5경기</label>
+                <label for="first">레전드경기</label>
                 <label for="second">팀 순위</label>
             </section>
             <div class="tab_item">
                 <ul>
                     <li class="item">
+                        <a href="https://sports.news.naver.com/kbaseball/vod/index?uCategory=kbaseball&category=kbo&id=871724&redirect=true">
+                            <div class="thumbnail">
+                                <img width=40px height= 40px src="play.png" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>삼성vNC</strong>
+                                <p>2021.10.30</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
                         <a href="https://sports.news.naver.com/kbaseball/vod/index?uCategory=kbaseball&category=kbo&id=868898&redirect=true">
                             <div class="thumbnail">
-                                <img width=40px height= 40px src="1.png" alt="">
+                                <img width=40px height= 40px src="play.png" alt="">
                             </div>
                             <div class="description">
                                 <strong>삼성vsSSG</strong>
@@ -336,20 +369,9 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="https://sports.news.naver.com/kbaseball/vod/index?uCategory=kbaseball&category=kbo&id=867981&redirect=true">
                             <div class="thumbnail">
-                                <img src="https://picsum.photos/id/684/45/45" alt="">
-                            </div>
-                            <div class="description">
-                                <strong>삼성vsKT</strong>
-                                <p>2021.10.23</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="#">
-                            <div class="thumbnail">
-                                <img src="https://picsum.photos/id/684/45/45" alt="">
+                                <img width=40px height= 40px src="play.png" alt="">
                             </div>
                             <div class="description">
                                 <strong>삼성vsKT</strong>
@@ -358,24 +380,24 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="https://sports.news.naver.com/kbaseball/vod/index?uCategory=kbaseball&category=kbo&id=861101&redirect=true">
                             <div class="thumbnail">
-                                <img src="https://picsum.photos/id/684/45/45" alt="">
+                                <img width=40px height= 40px src="play.png" alt="">
                             </div>
                             <div class="description">
                                 <strong>삼성vs두산</strong>
-                                <p>2021.10.19</p>
+                                <p>2021.10.3</p>
                             </div>
                         </a>
                     </li>
                     <li class="item">
-                        <a href="#">
+                        <a href="https://sports.news.naver.com/kbaseball/vod/index?uCategory=kbaseball&category=kbo&id=854593&redirect=true">
                             <div class="thumbnail">
-                                <img src="https://picsum.photos/id/684/45/45" alt="">
+                                <img width=40px height= 40px src="play.png" alt="">
                             </div>
                             <div class="description">
-                                <strong>삼성vs키움</strong>
-                                <p>2021.10.17</p>
+                                <strong>삼성vsSSG</strong>
+                                <p>2021.09.18</p>
                             </div>
                         </a>
                     </li>
@@ -387,22 +409,22 @@
                     <li class="item">
                         <a href="#">
                             <div class="thumbnail">
-                                <img width=45px height= 45px src="sam.png" alt="">                            
+                                <img width=45px height= 45px src="kt.png" alt="">                            
                             </div>
                             <div class="description">
                                 <strong>1위</strong>
-                                <p>삼성 라이온즈</p>
+                                <p>KT WIZ</p>
                             </div>
                         </a>
                     </li>
                     <li class="item">
                         <a href="#">
                             <div class="thumbnail">
-                                <img width=45px height= 45px src="kt.png" alt="">                            
+                                <img width=45px height= 45px src="sam.png" alt="">                            
                             </div>
                             <div class="description">
-                                <strong>1위</strong>
-                                <p>KT WIZ</p>
+                                <strong>2위</strong>
+                                <p>삼성 라이온즈</p>
                             </div>
                         </a>
                     </li>
@@ -435,7 +457,7 @@
                             </div>
                             <div class="description">
                                 <strong>5위</strong>
-                                <p>두산 베어스</p>
+                                <p>키움 히어로즈</p>
                             </div>
                         </a>
                     </li>
@@ -446,7 +468,7 @@
                             </div>
                             <div class="description">
                                 <strong>6위</strong>
-                                <p>두산 베어스</p>
+                                <p>SSG 랜더스</p>
                             </div>
                         </a>
                     </li>
@@ -457,7 +479,40 @@
                             </div>
                             <div class="description">
                                 <strong>7위</strong>
-                                <p>두산 베어스</p>
+                                <p>NC 다이노스</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width=45px height= 45px src="do.png" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>8위</strong>
+                                <p>롯데 자이언츠</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width=45px height= 45px src="do.png" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>9위</strong>
+                                <p>기아 타이거즈</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width=45px height= 45px src="do.png" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>10위</strong>
+                                <p>한화 이글스</p>
                             </div>
                         </a>
                     </li>
@@ -466,7 +521,7 @@
         </aside>
     </div>
     <footer id="main_footer">
-        <h3>한국시리즈 우승 가즈악..!</h3>
+        <h3>한국시리즈 우승 가즈악..! 제발..!ㅜㅜ</h3>
     </footer>
 </body>
 </html>
