@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표준 웹 페이지 실습</title>
+    <style>
+        #grid {
+            display: grid;
+            /* 세로 부분과 가로 부분에 대해서 간략하게 비율 정할 수 있음  */
+            /* 세로 3 칸 / 가로 2 칸: 윗부분과 아랫부분 통일? */
+            grid-template: 50px 50px 330px 1fr / 200px 330px;
+            grid-template-areas:
+                'main_header main_header'
+                'content content'
+                'main_aside Section'
+                'Footer Footer'
+            ;
+            gap: 30px;
+
+        }
+
+        #main_header {
+            grid-area: main_header;
+        }
+
+        #content {
+            grid-area: content;
+        }
+
+        #main_aside {
+            grid-area: main_aside;
+            background-color: coral;
+            overflow: hidden;
+        }
+
+        #Section {
+            grid-area: Section;
+            background-color: crimson;
+            overflow: hidden;
+        }
+
+        #Footer {
+            grid-area: Footer;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>Standard Web Page</h1>
+            <h2>HTML5+CSS3 Basic</h2>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <!-- (li>a[href=#]{$})*5 -->
+                <li><a href="#">한글테스트</a></li>
+                <li><a href="#">HTML2_gnb</a></li>
+                <li><a href="#">HTML3_gnb</a></li>
+                <li><a href="#">HTML4_gnb</a></li>
+                <li><a href="#">HTML5_gnb</a></li>
+            </ul>
+        </nav>
+        <nav id="main_lnb">
+            <ul>
+                <!-- (li>a[href=#]{$})*5 -->
+                <li><a href="#">HTML1</a></li>
+                <li><a href="#">HTML2</a></li>
+                <li><a href="#">HTML3</a></li>
+                <li><a href="#">HTML4</a></li>
+                <li><a href="#">HTML5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>제목</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolor doloribus, repellendus
+                    molestiae rem unde non beatae voluptatem aliquid quae quam quas eligendi. Esse, reiciendis inventore
+                    distinctio voluptatibus quisquam nobis soluta numquam enim fuga facere nostrum deserunt ipsam
+                    ducimus dolorem harum saepe eaque nulla consectetur. Ratione, eum excepturi cum id consectetur
+                    inventore, tempora adipisci aut aliquam sequi vel! Voluptatibus, quibusdam. Dignissimos totam earum
+                    accusamus a laboriosam quis repellat cumque dolor fuga! Consequuntur error tempora accusantium
+                    officia obcaecati nobis! Quisquam quas distinctio dolorem possimus placeat corporis, aliquam earum
+                    autem quo enim veniam vel nihil repellat odit dolorum architecto! Omnis obcaecati quia repudiandae
+                    quae expedita rerum modi iusto architecto harum voluptatum maiores accusantium, similique sint et
+                    eaque itaque ducimus iure! Saepe, ipsa a fugit obcaecati, inventore cum beatae doloremque animi
+                    vitae consequatur dolorem nihil ipsam corporis veniam hic ducimus laborum enim quis voluptas
+                    accusamus dolores minima soluta. Inventore architecto dolores similique facilis suscipit tempore
+                    corporis assumenda dicta, perferendis numquam soluta ad reiciendis odit, porro ipsum! Voluptatum
+                    quas assumenda corporis incidunt, aspernatur deleniti mollitia voluptatibus, porro dolorem illo
+                    accusantium voluptas? Dicta veniam, officiis ullam nesciunt explicabo quo quos magnam quasi eveniet
+                    ratione veritatis nam culpa earum laboriosam animi enim voluptates doloremque? A, ipsa? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Corrupti ullam quia voluptatum alias iusto est sit nisi
+                    enim! Dolorum officiis ex dignissimos soluta similique dolore ipsa blanditiis molestias atque
+                    suscipit rerum magni ipsam quibusdam, at incidunt fugit quos exercitationem qui. Quasi tenetur
+                    soluta reprehenderit corrupti alias error, id itaque. Sapiente animi itaque debitis suscipit commodi
+                    sit similique doloribus quod recusandae reiciendis officia, mollitia incidunt magni! Eos quibusdam
+                    ex quis sed temporibus sequi maxime explicabo odit voluptatibus debitis? Fugiat provident
+                    consectetur quos. Nulla pariatur quia commodi nostrum expedita repellat impedit, in dicta voluptatem
+                    voluptatum corrupti, molestias fugit modi asperiores autem rerum.</p>
+            </article>
+            <article class="main_article">
+                <h1>제목</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam quia voluptatum alias iusto
+                    est sit nisi enim! Dolorum officiis ex dignissimos soluta similique dolore ipsa blanditiis molestias
+                    atque suscipit rerum magni ipsam quibusdam, at incidunt fugit quos exercitationem qui. Quasi tenetur
+                    soluta reprehenderit corrupti alias error, id itaque. Sapiente animi itaque debitis suscipit commodi
+                    sit similique doloribus quod recusandae reiciendis officia, mollitia incidunt magni! Eos quibusdam
+                    ex quis sed temporibus sequi maxime explicabo odit voluptatibus debitis? Fugiat provident
+                    consectetur quos. Nulla pariatur quia commodi nostrum expedita repellat impedit, in dicta voluptatem
+                    voluptatum corrupti, molestias fugit modi asperiores autem rerum.</p>
+            </article>
+            <article class="main_article">
+                <h1>제목</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ullam quia voluptatum alias iusto
+                    est sit nisi enim! Dolorum officiis ex dignissimos soluta similique dolore ipsa blanditiis molestias
+                    atque suscipit rerum magni ipsam quibusdam, at incidunt fugit quos exercitationem qui. Quasi tenetur
+                    soluta reprehenderit corrupti alias error, id itaque. Sapiente animi itaque debitis suscipit commodi
+                    sit similique doloribus quod recusandae reiciendis officia, mollitia incidunt magni! Eos quibusdam
+                    ex quis sed temporibus sequi maxime explicabo odit voluptatibus debitis? Fugiat provident
+                    consectetur quos. Nulla pariatur quia commodi nostrum expedita repellat impedit, in dicta voluptatem
+                    voluptatum corrupti, molestias fugit modi asperiores autem rerum.</p>
+            </article>
+        </section>
+        <aside id="main_aside">
+            <input id="first" type="radio" name="tab" checked="checked">
+            <input id="second" type="radio" name="tab">
+            <section class="buttons">
+                <label for="first">First</label>
+                <label for="second">Second</label>
+            </section>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>설명하기</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>설명하기</strong>
+                                <p>설명</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img width=45px height=45px src="https://picsum.photos/id/684/600/400" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>설명Lorem, ipsum dolor.</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/684/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>설명하기</strong>
+                                <p>설명</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab_item">
+                <ul>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/972/45/45" alt="">
+                            </div>
+                            <div class="description">
+                                <strong>두번째</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/972/45/45" alt="">
+
+                            </div>
+                            <div class="description">
+                                <strong>설명하기</strong>
+                                <p>설명</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/972/45/45" alt="">
+
+                            </div>
+                            <div class="description">
+                                <strong>설명하기</strong>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <div class="thumbnail">
+                                <img src="https://picsum.photos/id/972/45/45" alt="">
+
+                            </div>
+                            <div class="description">
+                                <strong>설명하기</strong>
+                                <p>설명</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+    <footer id="main_footer">
+        <h3>HTML5+CSS Basic</h3>
+        <address>WebSite Layout Basic</address>
+    </footer>
+
+</body>
+
+</html>

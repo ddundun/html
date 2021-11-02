@@ -1,0 +1,21 @@
+// @color:FF0000;
+// // @hue: hue(@color);
+// @saturation: saturation(@color);
+// @lightness: lightness(@color);
+
+// div {height: 5px;}
+// @iteration:37;
+
+// div:nth-child(1) { background-color: hsl(@hue, @saturation, @lightness);}
+// div:nth-child(2) { background-color: hsl(@hue, @saturation, @lightness);}
+// div:nth-child(3) { background-color: hsl(@hue, @saturation, @lightness);}
+// div:nth-child(4) { background-color: hsl(@hue, @saturation, @lightness);}
+
+.rainbow-loop(@i) when (@i>0)
+{
+    div:nth-child(@{i}) 
+    {
+         background: hsl(@hue+((@i)*10),@saturation,@lightness);
+    }
+    .rainbow-loop((@i)-1) 
+}

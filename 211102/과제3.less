@@ -1,0 +1,23 @@
+@color:#00ff00;
+
+@hue: hue(@color);
+
+@saturation: saturation(@color);
+
+@lightness:lightness(@color);
+
+div{height: 1px;}
+
+@iterations:100;
+
+
+// @color:#00ff00; //@변수명
+// div {height: 30px}
+// // darken: 기본함수인데, 두번째 파라메터만큼 더 어두운 값을 반환
+// // less파일만들면 자동으로 css파일생김
+// div:nth-child(1) {background-color: darken(@color,0%);}
+// div:nth-child(2) {background-color: darken(@color,15%);}
+// div:nth-child(3) {background-color: darken(@color,25%);}
+// div:nth-child(4) {background-color: darken(@color,35%);}
+// div:nth-child(5) {background-color: darken(@color,45%);}
+// div:nth-child(6) {background-color: darken(@color,55%);}
